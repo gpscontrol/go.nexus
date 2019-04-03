@@ -181,7 +181,7 @@ func handleConnection(conn net.Conn) {
 
 func main() {
     var err error
-    db, err = sql.Open("mysql", "gpscontrol:123456@/nexus")
+    db, err = sql.Open("mysql", "ort:123456@/nexus")
     if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
     }
